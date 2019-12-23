@@ -3,7 +3,7 @@ node {
     git 'https://github.com/ataberkcil/JavaVulnerableLab'
   }
   stage('Build—Package'){
-    def mvmHome = tool name: 'maven3', type: 'maven'
+    def mvnHome = tool name: 'maven3', type: 'maven'
     sh "${mvnHome}/bin/mvn package"
   }
 }
